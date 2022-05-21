@@ -21,3 +21,274 @@
     font-size: 34px;
   }
 }
+
+.featured-product-carousel-item {
+  display: block;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.featured-products-container
+  .featured-product-item-container.loaded
+  .featured-item-image-holder {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.featured-item-image-holder {
+  display: block;
+  position: relative;
+}
+
+.featured-products-container
+  .featured-product-item-container.loaded
+  [data-frame] {
+  opacity: 1;
+}
+
+.featured-products-container .featured-product-carousel-item [data-frame] {
+  margin: 50px auto;
+}
+
+[data-frame][data-frame*="collector"] {
+  width: 95%;
+}
+
+[data-frame] {
+  position: relative;
+  box-shadow: 0 20px 30px rgb(0 0 0 / 30%), inset 0 0 0 1px rgb(0 0 0 / 10%);
+  transition: opacity 0.4s;
+}
+
+[data-frame][data-frame*="collector"][data-frame*="black"]:before {
+  background-image: url(https://cdn.shopify.com/s/files/1/0115/7385/4270/t/124/assets/frame-landscape-collector-black.png?v=32);
+}
+
+[data-frame]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: center/cover no-repeat;
+  z-index: 10;
+}
+
+[data-frame][data-frame*="collector"] .object-fit {
+  width: 91%;
+  height: 88%;
+}
+
+[data-frame] > .object-fit {
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+[data-frame][data-frame*="collector"]:after {
+  padding-top: 70%;
+}
+
+[data-frame]:after {
+  content: "";
+  display: block;
+}
+
+.object-fit,
+.object-contain {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  user-select: none;
+}
+
+[data-frame] > .object-fit img {
+  min-height: unset;
+  max-height: unset;
+}
+
+img[data-sizes="auto"] {
+  display: block;
+  width: 100%;
+}
+
+.object-fit > * {
+  height: calc(100% + 4px) !important;
+  object-fit: cover;
+}
+
+.object-fit > *,
+.object-contain > * {
+  position: relative;
+  max-width: none;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  -webkit-backface-visibility: hidden;
+}
+
+.loaded .collection-item-title,
+.loaded .featured-product-item-title,
+.loaded .carousel-item-title {
+  color: inherit;
+}
+
+.featured-product-item-title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Oswald", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  font-style: normal;
+  display: block;
+  margin-bottom: 2px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.collection-item-title,
+.featured-product-item-title,
+.carousel-item-title {
+  margin-top: 10px;
+  position: relative;
+  transition: 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.loaded .collection-item-artist,
+.loaded .featured-product-item-artist,
+.loaded .carousel-item-artist {
+  color: inherit;
+}
+.featured-product-item-artist {
+  font-family: adobe-caslon-pro, serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 3px;
+  text-align: center;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.collection-item-artist,
+.featured-product-item-artist,
+.carousel-item-artist {
+  display: inline-block;
+  position: relative;
+  transition: 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+a {
+  color: inherit;
+}
+
+a {
+  background-color: transparent;
+}
+
+.collection-item-options-description {
+  color: inherit;
+}
+.collection-item-options-description {
+  font-family: adobe-caslon-pro, serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  font-style: italic;
+  display: inline-block;
+  margin-bottom: 10px;
+  text-align: center;
+  line-height: 24px;
+  font-size: 16px;
+  position: relative;
+  transition: 0.4s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+/* dots overide theme */
+
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.slick-dots > li {
+  display: inline-block;
+  margin: 0;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: 0;
+  background: 0 0;
+}
+
+.slick-dots > li {
+  display: inline-block;
+  margin: 0;
+}
+
+.slick-dots li {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0 !important;
+  cursor: pointer;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #000;
+}
+.slick-dots li button:before {
+  font-family: slick;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "•";
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+
+.slick-dots button:before {
+  font-size: 8px !important;
+}
+
+input,
+textarea,
+select,
+button {
+  border-radius: 0;
+  transition: 0s;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
