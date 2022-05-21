@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>House of Spoils Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="carousel.css">
+    <script>
+        // site variables
+        const siteUrl = 'https://houseofspoils.com';
+        const root = document.getElementsByTagName('html')[0];
+
+        root.style.setProperty(
+            '--s-viewport-height-initial', `${window.innerHeight}px`
+        );
+
+        root.style.setProperty(
+            '--s-viewport-height', `${window.innerHeight}px`
+        );
+
+        window.addEventListener('resize', () => {
+            root.style.setProperty(
+                '--s-viewport-height', `${window.innerHeight}px`
+            );
+        });
+    </script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
+ 
+   
+  <body>
+    <header
+      id="shopify-section-header"
+      class="shopify-section main-site-header"
+    >
+      <nav role="navigation">
+        <div class="navigation-container">
+          <div class="left-hand-navigation-container">
+            <div class="desktop-navigation-content">
+              <ul class="navigation-menu-list">
+                <li class="navigation-item">
+                  <a class="js-menu-shop-open" href="/collections/all-prints"
+                    >Shop Prints</a
+                  >
+                </li>
+                <li class="navigation-item">
+                  <a
+                    href="/pages/reviews"
+                    data-type="page-transition"
+                    id="left-hand-header-navigation---v2-reviews-2"
+                    class="navigation-item-link"
+                  >
+                    Reviews
+                  </a>
+                </li>
+                <li class="navigation-item">
+                  <a class="js-membership-modal-open" href="#">MEMBERSHIP</a>
+                </li>
+              </ul>
+            </div>
+            <!--
+            <div class="mobile-navigation-content js-mobile-menu-container">
+              <div
+                class="mobile-navigation-hamburger-menu js-mobile-menu-toggle"
+              >
+                <div class="mobile-navigation-hamburger-menu-bar"></div>
+              </div>
+            </div> -->
+          </div>
+
+          <div class="logo-container">
+            <a
+              href="/"
+              class="site-header__logo-image"
+              data-type="page-transition"
+            >
+              <svg
+                style="width: 100%; height: 100%"
+                id="e7dbab7a-39e6-40f6-91eb-de816899de82"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1268 88.6"
+              >
+                <defs>
+                  <style>
+                    .fb6ab45d-8d78-4872-90d8-539147b73f67 {
+                      fill: #010101;
+                    }
+                  </style>
+                </defs>
+                <title>HouseofSpoilsLogo</title>
+                <path
+                  class="fb6ab45d-8d78-4872-90d8-539147b73f67"
+                  d="M146.7,249.6V213.5H106.2v36.1H88V163.9h18.2v33.7h40.5V163.9H165v85.7Z"
+                  transform="translate(-88 -162.5)"
+                ></path>
+                <path
+                  class="fb6ab45d-8d78-4872-90d8-539147b73f67"
+                  d="M201.5,206.8c0-25.8,18.9-44.3,44.9-44.3S291,181,291,206.8s-18.8,44.3-44.6,44.3S201.5,232.6,201.5,206.8Zm70.8,0c0-16-10.2-28.1-25.9-28.1s-26.1,12.1-26.1,28.1,10.1,28.1,26.1,28.1S272.3,222.7,272.3,206.8Z"
+                  transform="translate(-88 -162.5)"
+                ></path>
+                <path
+                  class="fb6ab45d-8d78-4872-90d8-539147b73f67"
+                  d="M327.7,215.3V163.9h18.4v50.9c0,11.9,7,20.1,20.2,20.1s20-8.2,20-20.1V163.9H405v51.4c0,21.2-12.6,35.8-38.7,35.8S327.7,236.5,327.7,215.3Z"
+                  transform="translate(-88 -162.5)"
+                ></path>
+                <path
+                  class="fb6ab45d-8d78-4872-90d8-539147b73f67"
+                  d="M439.8,237.5l10-14.3A37.5,37.5,0,0,0,477,234.9c10.2,0,14.9-4.5,14.9-9.5,0-14.9-49.3-4.5-49.3-36.7,0-14.2,12.3-26.1,32.5-26.1,13.6,0,24.9,4.1,33.4,12l-10.2,13.6a36.7,36.7,0,0,0-24.9-9.4c-7.7,0-12,3.4-12,8.5,0,13.5,49.1,4.4,49.1,36.3,0,15.7-11.3,27.5-34.3,27.5C459.7,251.1,447.9,245.6,439.8,237.5Z"
+                  transform="translate(-88 -162.5)"
+                ></path>
+                <path
+                  class="fb6ab45d-8d78-4872-90d8-539147b73f67"
+                  d="M546.5,249.6V163.9h60.6V180H564.7v18h41.5v16H564.7v19.5h42.4v16.1Z"
+                  transform="translate(-88 -162.5)"
+                ></path>
+                <path
+                  class="fb6ab45d-8d78-4872-90d8-539147b73f67"
+                  d="M809.5,237.5l10-14.3a37.9,37.9,0,0,0,27.3,11.7c10.1,0,14.9-4.5,14.9-9.5,0-14.9-49.3-4.5-49.3-36.7,0-14.2,12.3-26.1,32.4-26.1,13.7,0,25,4.1,33.4,12l-10.1,13.6a36.9,36.9,0,0,0-24.9-9.4c-7.7,0-12.1,3.4-12.1,8.5,0,13.5,49.2,4.4,49.2,36.3,0,15.7-11.3,27.5-34.3,27.5C829.4,251.1,817.6,245.6,809.5,237.5Z"
+                  transform="translate(-88 -162.5)"
+                ></path>
+                <path
+                  class="fb6ab45d-8d78-4872-90d8-539147b73f67"
+                  d="M916.3,249.6V163.9h40c18.6,0,28.8,12.6,28.8,27.6S974.8,219,956.3,219H934.5v30.6Zm50.2-58.1c0-7.2-5.6-11.5-12.7-11.5H934.5v23h19.3C960.9,203,966.5,198.6,966.5,191.5Z"
+                  transform="translate(-88 -162.5)"
+                ></path>
+                <path
+                  class="fb6ab45d-8d78-4872-90d8-539147b73f67"
+                  d="M1016.2,206.8c0-25.8,18.9-44.3,44.8-44.3s44.7,18.5,44.7,44.3-18.9,44.3-44.7,44.3S1016.2,232.6,1016.2,206.8Zm70.7,0c0-16-10.1-28.1-25.9-28.1s-26.1,12.1-26.1,28.1,10.2,28.1,26.1,28.1S1086.9,222.7,1086.9,206.8Z"
+                  transform="translate(-88 -162.5)"
+                ></path>
+                <path
+                  class="fb6ab45d-8d78-4872-90d8-539147b73f67"
+                  d="M1142.3,249.6V163.9h18.2v85.7Z"
+                  transform="translate(-88 -162.5)"
+                ></path>
+                <path
+                  class="fb6ab45d-8d78-4872-90d8-539147b73f67"
+                  d="M1200.5,249.6V163.9h18.3v69.6h36.3v16.1Z"
+                  transform="translate(-88 -162.5)"
+                ></path>
+                <path
+                  class="fb6ab45d-8d78-4872-90d8-539147b73f67"
+                  d="M1285.2,237.5l10.1-14.3a37.5,37.5,0,0,0,27.2,11.7c10.1,0,14.9-4.5,14.9-9.5,0-14.9-49.3-4.5-49.3-36.7,0-14.2,12.3-26.1,32.5-26.1,13.6,0,24.9,4.1,33.3,12l-10.1,13.6a36.9,36.9,0,0,0-24.9-9.4c-7.7,0-12.1,3.4-12.1,8.5,0,13.5,49.2,4.4,49.2,36.3,0,15.7-11.3,27.5-34.3,27.5C1305.2,251.1,1293.3,245.6,1285.2,237.5Z"
+                  transform="translate(-88 -162.5)"
+                ></path>
+                <path
+                  class="fb6ab45d-8d78-4872-90d8-539147b73f67"
+                  d="M684.1,214.4c0-6.2,1.8-11.2,5.3-14.9s8.1-5.6,13.8-5.6,8.8,1.4,11.6,4.1,4.2,6.4,4.2,11.1a20.7,20.7,0,0,1-5.2,14.1c-3.5,3.9-8.2,5.9-14,5.9a17.4,17.4,0,0,1-8.4-1.9,11.5,11.5,0,0,1-5.5-5.4A15.9,15.9,0,0,1,684.1,214.4Zm25.9-6.5a6.9,6.9,0,0,0-1.9-5.2,6.3,6.3,0,0,0-4.8-1.9,8.3,8.3,0,0,0-5.3,1.8,11.5,11.5,0,0,0-3.5,5.3,17.4,17.4,0,0,0-1.3,6.4,8.1,8.1,0,0,0,2,5.7,6.4,6.4,0,0,0,4.9,2.1,7.9,7.9,0,0,0,6.3-3.2A17.1,17.1,0,0,0,710,207.9Z"
+                  transform="translate(-88 -162.5)"
+                ></path>
+                <path
+                  class="fb6ab45d-8d78-4872-90d8-539147b73f67"
+                  d="M749.7,194.7l-1.4,6.7h-6.4l-5.7,26.9h-9.1l5.7-26.9h-5.1l1.4-6.7h5.1l.7-3.4c.6-2.8,1.1-4.8,1.7-5.7a7.8,7.8,0,0,1,3.2-3.3,11.4,11.4,0,0,1,5.6-1.1,29,29,0,0,1,8.8,1.5l-1.8,6.5a15.6,15.6,0,0,0-5.3-1.1,2.9,2.9,0,0,0-2.3.9,13,13,0,0,0-1.1,3.4l-.5,2.3Z"
+                  transform="translate(-88 -162.5)"
+                ></path>
+              </svg>
+            </a>
+          </div>
+
+          <div class="right-hand-navigation-container">
+            <div class="desktop-navigation-content">
+              <ul class="navigation-menu-list">
+                <li class="navigation-item">
+                  <div class="navigation-item-link current-country__toggle">
+                    <img
+                      src="//cdn.shopify.com/s/files/1/0115/7385/4270/t/161/assets/AU.svg?v=34561444314132101841652100343"
+                    />
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      role="presentation"
+                      class="icon icon--wide icon-chevron-down"
+                      viewBox="0 0 498.98 284.49"
+                    >
+                      <defs></defs>
+                      <path
+                        fill="#231f20"
+                        d="M80.93 271.76A35 35 0 0 1 140.68 247l189.74 189.75L520.16 247a35 35 0 1 1 49.5 49.5L355.17 511a35 35 0 0 1-49.5 0L91.18 296.5a34.89 34.89 0 0 1-10.25-24.74z"
+                        transform="translate(-80.93 -236.76)"
+                      ></path>
+                    </svg>
+                  </div>
+                </li>
+
+                <li class="navigation-item nav-login">
+                  <a href="#">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g>
+                        <path
+                          stroke-width="0px"
+                          d="M9.02477 0.0574799C11.9255 0.0574799 14.2853 2.30493 14.2853 5.06755C14.2853 6.94057 13.2034 8.57904 11.6307 9.42224C14.8263 10.4055 17.1861 13.0745 17.4809 16.3988C17.5792 17.2413 15.9075 17.2885 15.8587 16.4924C15.5143 13.1681 12.5154 10.6398 9.02481 10.6398C5.4848 10.6398 2.53533 13.1681 2.19089 16.4924C2.0926 17.2885 0.420886 17.2413 0.519183 16.3988C0.863565 13.121 3.22327 10.4055 6.36941 9.42224C4.796 8.57972 3.71476 6.9404 3.71476 5.06755C3.71476 2.30493 6.12402 0.0574799 9.02477 0.0574799ZM9.02477 1.64958C7.00938 1.64958 5.38643 3.19453 5.38643 5.06742C5.38643 6.98684 7.00863 8.53251 9.02477 8.53251C10.9914 8.53251 12.6135 6.98755 12.6135 5.06742C12.6135 3.1944 10.9913 1.64958 9.02477 1.64958Z"
+                          fill="black"
+                        ></path>
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+                <li class="navigation-item account-link" style="display: none">
+                  <a href="/pages/account-settings">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g>
+                        <path
+                          stroke-width="0px"
+                          d="M9.02477 0.0574799C11.9255 0.0574799 14.2853 2.30493 14.2853 5.06755C14.2853 6.94057 13.2034 8.57904 11.6307 9.42224C14.8263 10.4055 17.1861 13.0745 17.4809 16.3988C17.5792 17.2413 15.9075 17.2885 15.8587 16.4924C15.5143 13.1681 12.5154 10.6398 9.02481 10.6398C5.4848 10.6398 2.53533 13.1681 2.19089 16.4924C2.0926 17.2885 0.420886 17.2413 0.519183 16.3988C0.863565 13.121 3.22327 10.4055 6.36941 9.42224C4.796 8.57972 3.71476 6.9404 3.71476 5.06755C3.71476 2.30493 6.12402 0.0574799 9.02477 0.0574799ZM9.02477 1.64958C7.00938 1.64958 5.38643 3.19453 5.38643 5.06742C5.38643 6.98684 7.00863 8.53251 9.02477 8.53251C10.9914 8.53251 12.6135 6.98755 12.6135 5.06742C12.6135 3.1944 10.9913 1.64958 9.02477 1.64958Z"
+                          fill="black"
+                        ></path>
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="navigation-item">
+                  <div class="search-icon">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g>
+                        <path
+                          stroke-width="0px"
+                          d="M17.2025 15.4535L14.1518 12.4252C16.5337 9.37561 16.2832 5.0324 13.5453 2.29607C12.1036 0.855349 10.1803 0.0615997 8.13312 0.0615997C6.08496 0.0615997 4.16252 0.855391 2.72098 2.29607C1.27935 3.73679 0.485107 5.65894 0.485107 7.70482C0.485107 9.7517 1.2794 11.6729 2.72098 13.1136C4.1626 14.5543 6.08596 15.348 8.13312 15.348C9.82619 15.348 11.4981 14.7843 12.8352 13.7189L15.8654 16.7896C16.0531 16.9772 16.2833 17.0612 16.5339 17.0612C16.7845 17.0612 17.0147 16.9568 17.2025 16.7896C17.5788 16.4347 17.5788 15.8293 17.2025 15.4533L17.2025 15.4535ZM13.9012 7.70482C13.9012 9.24997 13.2955 10.6916 12.2082 11.7774C11.1216 12.8632 9.65882 13.4694 8.13306 13.4694C6.6073 13.4694 5.14445 12.864 4.05796 11.7774C2.97144 10.6915 2.3649 9.22962 2.3649 7.70482C2.3649 6.15968 2.9706 4.71808 4.05796 3.63228C5.14449 2.54644 6.6073 1.94027 8.13306 1.94027C9.67917 1.94027 11.1217 2.5456 12.2082 3.63228C13.2947 4.71894 13.9012 6.15976 13.9012 7.70482Z"
+                          fill="black"
+                        ></path>
+                      </g>
+                    </svg>
+                  </div>
+                </li>
+
+                <li class="navigation-item">
+                  <a
+                    href="https://houseofspoils.com/cart"
+                    data-cart-view="data-cart-view"
+                    class="header-cart-link"
+                    data-type="page-transition"
+                  >
+                    <div class="cart-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 49.23 56.58"
+                      >
+                        <path
+                          fill="black"
+                          d="M47,56.58H2.25A2.25,2.25,0,0,1,0,54.11l4-41a2.25,2.25,0,0,1,2.24-2h6.16v-.27C12.41,7.35,14.94,2.63,19,1A15.78,15.78,0,0,1,30.28,1c4.08,1.59,6.61,6.31,6.61,9.77v.27H43a2.25,2.25,0,0,1,2.24,2l4,41a2.28,2.28,0,0,1-.57,1.73A2.26,2.26,0,0,1,47,56.58ZM4.73,52.08H44.5l-3.56-36.5H8.29Zm12.18-41H32.39v-.27c0-1.68-1.46-4.69-3.75-5.58a11.31,11.31,0,0,0-8,0c-2.29.89-3.75,3.9-3.75,5.58Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!--
+            <div class="mobile-navigation-content">
+              <a
+                class="mobile-cart-icon"
+                href="/cart"
+                data-cart-view="data-cart-view"
+              >
+                <div class="cart-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 49.23 56.58"
+                  >
+                    <path
+                      fill="black"
+                      d="M47,56.58H2.25A2.25,2.25,0,0,1,0,54.11l4-41a2.25,2.25,0,0,1,2.24-2h6.16v-.27C12.41,7.35,14.94,2.63,19,1A15.78,15.78,0,0,1,30.28,1c4.08,1.59,6.61,6.31,6.61,9.77v.27H43a2.25,2.25,0,0,1,2.24,2l4,41a2.28,2.28,0,0,1-.57,1.73A2.26,2.26,0,0,1,47,56.58ZM4.73,52.08H44.5l-3.56-36.5H8.29Zm12.18-41H32.39v-.27c0-1.68-1.46-4.69-3.75-5.58a11.31,11.31,0,0,0-8,0c-2.29.89-3.75,3.9-3.75,5.58Z"
+                    ></path>
+                  </svg>
+                </div>
+              </a>
+            </div> -->
+          </div>
+        </div>
+
+        <script type="application/javascript">
+          document
+            .querySelectorAll(".js-drop-down-toggle")
+            .forEach(function (dropdownToggle) {
+              dropdownToggle.addEventListener("click", function (e) {
+                e.target.classList.toggle("open");
+                e.preventDefault();
+              });
+            });
+        </script>
+      </nav>
+
+      <!--
+      <nav role="navigation" class="header-sticky">
+        <div class="navigation-container">
+          <div class="left-hand-navigation-container">
+            <div class="desktop-navigation-content">
+              <ul class="navigation-menu-list">
+                <li class="navigation-item">
+                  <a class="js-menu-shop-open" href="/collections/all-prints"
+                    >Shop Prints</a
+                  >
+                </li>
+                <li class="navigation-item">
+                  <a
+                    href="/pages/reviews"
+                    data-type="page-transition"
+                    id="left-hand-header-navigation---v2-reviews-2"
+                    class="navigation-item-link"
+                  >
+                    Reviews
+                  </a>
+                </li>
+                <li class="navigation-item">
+                  <a class="js-membership-modal-open" href="#">MEMBERSHIP</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mobile-navigation-content js-mobile-menu-container">
+              <div
+                class="mobile-navigation-hamburger-menu js-mobile-menu-toggle"
+              >
+                <div class="mobile-navigation-hamburger-menu-bar"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="logo-container">
+            <a
+              href="/"
+              class="site-header__logo-image"
+              data-type="page-transition"
+            >
+              <svg
+                style="width: 100%; height: 100%"
+                id="e7dbab7a-39e6-40f6-91eb-de816899de82"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1268 88.6"
+              >
+                <defs>
+                  <style>
+                    .fb6ab45d-8d78-4872-90d8-539147b73f67 {
+                      fill: #010101;
+                    }
+                  </style>
+                </defs>
+                <title>HouseofSpoilsLogo</title>
+                <path
+                  class="fb6ab45d-8d78-4872-90d8-539147b73f67"
+                  d="M146.7,249.6V213.5H106.2v36.1H88V163.9h18.2v33.7h40.5V163.9H165v85.7Z"
+                  transform="translate(-88 -162.5)"
+                ></path>
+                <path
+                  class="fb6ab45d-8d78-4872-90d8-539147b73f67"
+                  d="M201.5,206.8c0-25.8,18.9-44.3,44.9-44.3S291,181,291,206.8s-18.8,44.3-44.6,44.3S201.5,232.6,201.5,206.8Zm70.8,0c0-16-10.2-28.1-25.9-28.1s-26.1,12.1-26.1,28.1,10.1,28.1,26.1,28.1S272.3,222.7,272.3,206.8Z"
+                  transform="translate(-88 -162.5)"
+                ></path>
+                <path
+                  class="fb6ab45d-8d78-4872-90d8-539147b73f67"
+                  d="M327.7,215.3V163.9h18.4v50.9c0,11.9,7,20.1,20.2,20.1s20-8.2,20-20.1V163.9H405v51.4c0,21.2-12.6,35.8-38.7,35.8S327.7,236.5,327.7,215.3Z"
+                  transform="translate(-88 -162.5)"
+                ></path>
+                <path
+                  class="fb6ab45d-8d78-4872-90d8-539147b73f67"
+                  d="M439.8,237.5l10-14.3A37.5,37.5,0,0,0,477,234.9c10.2,0,14.9-4.5,14.9-9.5,0-14.9-49.3-4.5-49.3-36.7,0-14.2,12.3-26.1,32.5-26.1,13.6,0,24.9,4.1,33.4,12l-10.2,13.6a36.7,36.7,0,0,0-24.9-9.4c-7.7,0-12,3.4-12,8.5,0,13.5,49.1,4.4,49.1,36.3,0,15.7-11.3,27.5-34.3,27.5C459.7,251.1,447.9,245.6,439.8,237.5Z"
+                  transform="translate(-88 -162.5)"
+                ></path>
+                <path
+                  class="fb6ab45d-8d78-4872-90d8-539147b73f67"
+                  d="M546.5,249.6V163.9h60.6V180H564.7v18h41.5v16H564.7v19.5h42.4v16.1Z"
+                  transform="translate(-88 -162.5)"
+                ></path>
+                <path
+                  class="fb6ab45d-8d78-4872-90d8-539147b73f67"
+                  d="M809.5,237.5l10-14.3a37.9,37.9,0,0,0,27.3,11.7c10.1,0,14.9-4.5,14.9-9.5,0-14.9-49.3-4.5-49.3-36.7,0-14.2,12.3-26.1,32.4-26.1,13.7,0,25,4.1,33.4,12l-10.1,13.6a36.9,36.9,0,0,0-24.9-9.4c-7.7,0-12.1,3.4-12.1,8.5,0,13.5,49.2,4.4,49.2,36.3,0,15.7-11.3,27.5-34.3,27.5C829.4,251.1,817.6,245.6,809.5,237.5Z"
+                  transform="translate(-88 -162.5)"
+                ></path>
+                <path
+                  class="fb6ab45d-8d78-4872-90d8-539147b73f67"
+                  d="M916.3,249.6V163.9h40c18.6,0,28.8,12.6,28.8,27.6S974.8,219,956.3,219H934.5v30.6Zm50.2-58.1c0-7.2-5.6-11.5-12.7-11.5H934.5v23h19.3C960.9,203,966.5,198.6,966.5,191.5Z"
+                  transform="translate(-88 -162.5)"
+                ></path>
+                <path
+                  class="fb6ab45d-8d78-4872-90d8-539147b73f67"
+                  d="M1016.2,206.8c0-25.8,18.9-44.3,44.8-44.3s44.7,18.5,44.7,44.3-18.9,44.3-44.7,44.3S1016.2,232.6,1016.2,206.8Zm70.7,0c0-16-10.1-28.1-25.9-28.1s-26.1,12.1-26.1,28.1,10.2,28.1,26.1,28.1S1086.9,222.7,1086.9,206.8Z"
+                  transform="translate(-88 -162.5)"
+                ></path>
+                <path
+                  class="fb6ab45d-8d78-4872-90d8-539147b73f67"
+                  d="M1142.3,249.6V163.9h18.2v85.7Z"
+                  transform="translate(-88 -162.5)"
+                ></path>
+                <path
+                  class="fb6ab45d-8d78-4872-90d8-539147b73f67"
+                  d="M1200.5,249.6V163.9h18.3v69.6h36.3v16.1Z"
+                  transform="translate(-88 -162.5)"
+                ></path>
+                <path
+                  class="fb6ab45d-8d78-4872-90d8-539147b73f67"
+                  d="M1285.2,237.5l10.1-14.3a37.5,37.5,0,0,0,27.2,11.7c10.1,0,14.9-4.5,14.9-9.5,0-14.9-49.3-4.5-49.3-36.7,0-14.2,12.3-26.1,32.5-26.1,13.6,0,24.9,4.1,33.3,12l-10.1,13.6a36.9,36.9,0,0,0-24.9-9.4c-7.7,0-12.1,3.4-12.1,8.5,0,13.5,49.2,4.4,49.2,36.3,0,15.7-11.3,27.5-34.3,27.5C1305.2,251.1,1293.3,245.6,1285.2,237.5Z"
+                  transform="translate(-88 -162.5)"
+                ></path>
+                <path
+                  class="fb6ab45d-8d78-4872-90d8-539147b73f67"
+                  d="M684.1,214.4c0-6.2,1.8-11.2,5.3-14.9s8.1-5.6,13.8-5.6,8.8,1.4,11.6,4.1,4.2,6.4,4.2,11.1a20.7,20.7,0,0,1-5.2,14.1c-3.5,3.9-8.2,5.9-14,5.9a17.4,17.4,0,0,1-8.4-1.9,11.5,11.5,0,0,1-5.5-5.4A15.9,15.9,0,0,1,684.1,214.4Zm25.9-6.5a6.9,6.9,0,0,0-1.9-5.2,6.3,6.3,0,0,0-4.8-1.9,8.3,8.3,0,0,0-5.3,1.8,11.5,11.5,0,0,0-3.5,5.3,17.4,17.4,0,0,0-1.3,6.4,8.1,8.1,0,0,0,2,5.7,6.4,6.4,0,0,0,4.9,2.1,7.9,7.9,0,0,0,6.3-3.2A17.1,17.1,0,0,0,710,207.9Z"
+                  transform="translate(-88 -162.5)"
+                ></path>
+                <path
+                  class="fb6ab45d-8d78-4872-90d8-539147b73f67"
+                  d="M749.7,194.7l-1.4,6.7h-6.4l-5.7,26.9h-9.1l5.7-26.9h-5.1l1.4-6.7h5.1l.7-3.4c.6-2.8,1.1-4.8,1.7-5.7a7.8,7.8,0,0,1,3.2-3.3,11.4,11.4,0,0,1,5.6-1.1,29,29,0,0,1,8.8,1.5l-1.8,6.5a15.6,15.6,0,0,0-5.3-1.1,2.9,2.9,0,0,0-2.3.9,13,13,0,0,0-1.1,3.4l-.5,2.3Z"
+                  transform="translate(-88 -162.5)"
+                ></path>
+              </svg>
+            </a>
+          </div>
+
+          <div class="right-hand-navigation-container">
+            <div class="desktop-navigation-content">
+              <ul class="navigation-menu-list">
+                <li class="navigation-item">
+                  <div class="navigation-item-link current-country__toggle">
+                    <img
+                      src="//cdn.shopify.com/s/files/1/0115/7385/4270/t/161/assets/AU.svg?v=34561444314132101841652100343"
+                    />
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      role="presentation"
+                      class="icon icon--wide icon-chevron-down"
+                      viewBox="0 0 498.98 284.49"
+                    >
+                      <defs></defs>
+                      <path
+                        fill="#231f20"
+                        d="M80.93 271.76A35 35 0 0 1 140.68 247l189.74 189.75L520.16 247a35 35 0 1 1 49.5 49.5L355.17 511a35 35 0 0 1-49.5 0L91.18 296.5a34.89 34.89 0 0 1-10.25-24.74z"
+                        transform="translate(-80.93 -236.76)"
+                      ></path>
+                    </svg>
+                  </div>
+                </li>
+
+                <li class="navigation-item nav-login">
+                  <a href="#">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g>
+                        <path
+                          stroke-width="0px"
+                          d="M9.02477 0.0574799C11.9255 0.0574799 14.2853 2.30493 14.2853 5.06755C14.2853 6.94057 13.2034 8.57904 11.6307 9.42224C14.8263 10.4055 17.1861 13.0745 17.4809 16.3988C17.5792 17.2413 15.9075 17.2885 15.8587 16.4924C15.5143 13.1681 12.5154 10.6398 9.02481 10.6398C5.4848 10.6398 2.53533 13.1681 2.19089 16.4924C2.0926 17.2885 0.420886 17.2413 0.519183 16.3988C0.863565 13.121 3.22327 10.4055 6.36941 9.42224C4.796 8.57972 3.71476 6.9404 3.71476 5.06755C3.71476 2.30493 6.12402 0.0574799 9.02477 0.0574799ZM9.02477 1.64958C7.00938 1.64958 5.38643 3.19453 5.38643 5.06742C5.38643 6.98684 7.00863 8.53251 9.02477 8.53251C10.9914 8.53251 12.6135 6.98755 12.6135 5.06742C12.6135 3.1944 10.9913 1.64958 9.02477 1.64958Z"
+                          fill="black"
+                        ></path>
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+                <li class="navigation-item account-link" style="display: none">
+                  <a href="/pages/account-settings">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g>
+                        <path
+                          stroke-width="0px"
+                          d="M9.02477 0.0574799C11.9255 0.0574799 14.2853 2.30493 14.2853 5.06755C14.2853 6.94057 13.2034 8.57904 11.6307 9.42224C14.8263 10.4055 17.1861 13.0745 17.4809 16.3988C17.5792 17.2413 15.9075 17.2885 15.8587 16.4924C15.5143 13.1681 12.5154 10.6398 9.02481 10.6398C5.4848 10.6398 2.53533 13.1681 2.19089 16.4924C2.0926 17.2885 0.420886 17.2413 0.519183 16.3988C0.863565 13.121 3.22327 10.4055 6.36941 9.42224C4.796 8.57972 3.71476 6.9404 3.71476 5.06755C3.71476 2.30493 6.12402 0.0574799 9.02477 0.0574799ZM9.02477 1.64958C7.00938 1.64958 5.38643 3.19453 5.38643 5.06742C5.38643 6.98684 7.00863 8.53251 9.02477 8.53251C10.9914 8.53251 12.6135 6.98755 12.6135 5.06742C12.6135 3.1944 10.9913 1.64958 9.02477 1.64958Z"
+                          fill="black"
+                        ></path>
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="navigation-item">
+                  <div class="search-icon">
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g>
+                        <path
+                          stroke-width="0px"
+                          d="M17.2025 15.4535L14.1518 12.4252C16.5337 9.37561 16.2832 5.0324 13.5453 2.29607C12.1036 0.855349 10.1803 0.0615997 8.13312 0.0615997C6.08496 0.0615997 4.16252 0.855391 2.72098 2.29607C1.27935 3.73679 0.485107 5.65894 0.485107 7.70482C0.485107 9.7517 1.2794 11.6729 2.72098 13.1136C4.1626 14.5543 6.08596 15.348 8.13312 15.348C9.82619 15.348 11.4981 14.7843 12.8352 13.7189L15.8654 16.7896C16.0531 16.9772 16.2833 17.0612 16.5339 17.0612C16.7845 17.0612 17.0147 16.9568 17.2025 16.7896C17.5788 16.4347 17.5788 15.8293 17.2025 15.4533L17.2025 15.4535ZM13.9012 7.70482C13.9012 9.24997 13.2955 10.6916 12.2082 11.7774C11.1216 12.8632 9.65882 13.4694 8.13306 13.4694C6.6073 13.4694 5.14445 12.864 4.05796 11.7774C2.97144 10.6915 2.3649 9.22962 2.3649 7.70482C2.3649 6.15968 2.9706 4.71808 4.05796 3.63228C5.14449 2.54644 6.6073 1.94027 8.13306 1.94027C9.67917 1.94027 11.1217 2.5456 12.2082 3.63228C13.2947 4.71894 13.9012 6.15976 13.9012 7.70482Z"
+                          fill="black"
+                        ></path>
+                      </g>
+                    </svg>
+                  </div>
+                </li>
+
+                <li class="navigation-item">
+                  <a
+                    href="https://houseofspoils.com/cart"
+                    data-cart-view="data-cart-view"
+                    class="header-cart-link"
+                    data-type="page-transition"
+                  >
+                    <div class="cart-icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 49.23 56.58"
+                      >
+                        <path
+                          fill="black"
+                          d="M47,56.58H2.25A2.25,2.25,0,0,1,0,54.11l4-41a2.25,2.25,0,0,1,2.24-2h6.16v-.27C12.41,7.35,14.94,2.63,19,1A15.78,15.78,0,0,1,30.28,1c4.08,1.59,6.61,6.31,6.61,9.77v.27H43a2.25,2.25,0,0,1,2.24,2l4,41a2.28,2.28,0,0,1-.57,1.73A2.26,2.26,0,0,1,47,56.58ZM4.73,52.08H44.5l-3.56-36.5H8.29Zm12.18-41H32.39v-.27c0-1.68-1.46-4.69-3.75-5.58a11.31,11.31,0,0,0-8,0c-2.29.89-3.75,3.9-3.75,5.58Z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="mobile-navigation-content">
+              <a
+                class="mobile-cart-icon"
+                href="/cart"
+                data-cart-view="data-cart-view"
+              >
+                <div class="cart-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="18"
+                    height="18"
+                    viewBox="0 0 49.23 56.58"
+                  >
+                    <path
+                      fill="black"
+                      d="M47,56.58H2.25A2.25,2.25,0,0,1,0,54.11l4-41a2.25,2.25,0,0,1,2.24-2h6.16v-.27C12.41,7.35,14.94,2.63,19,1A15.78,15.78,0,0,1,30.28,1c4.08,1.59,6.61,6.31,6.61,9.77v.27H43a2.25,2.25,0,0,1,2.24,2l4,41a2.28,2.28,0,0,1-.57,1.73A2.26,2.26,0,0,1,47,56.58ZM4.73,52.08H44.5l-3.56-36.5H8.29Zm12.18-41H32.39v-.27c0-1.68-1.46-4.69-3.75-5.58a11.31,11.31,0,0,0-8,0c-2.29.89-3.75,3.9-3.75,5.58Z"
+                    ></path>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <script type="application/javascript">
+          document
+            .querySelectorAll(".js-drop-down-toggle")
+            .forEach(function (dropdownToggle) {
+              dropdownToggle.addEventListener("click", function (e) {
+                e.target.classList.toggle("open");
+                e.preventDefault();
+              });
+            });
+        </script>
+      </nav> -->
+
+      </div>
+
+      <script>
+        <!--/* const header = document.querySelector('[role="navigation"]');
+        const headerClone = header.cloneNode(true);
+
+        // clone header for sticky state
+        headerClone.classList.add("header-sticky");
+        header.parentNode.insertBefore(headerClone, header.nextSibling);
+
+        const scrollContainer = document.querySelector("body");
+
+        const headerScroll = () => {
+          // if scroll direction is upwards
+          this.oldScroll > scrollContainer.scrollTop &&
+          // and scroll has passed half a screen
+          scrollContainer.scrollTop > window.innerHeight * 0.8
+            ? root.classList.add("header-is-sticky")
+            : root.classList.remove("header-is-sticky");
+
+          this.oldScroll = scrollContainer.scrollTop;
+        };
+
+        headerScroll();
+        scrollContainer.addEventListener("scroll", headerScroll);
+
+        on("body", "mouseover", "[data-menu-image-trigger]", (e) => {
+          let target = e.target.hasAttribute("data-menu-image-trigger")
+            ? e.target
+            : e.target.closest("[data-menu-image-trigger]");
+          let image = document.querySelector(
+            `[data-menu-image="${target.getAttribute(
+              "data-menu-image-trigger"
+            )}"]`
+          );
+
+          document
+            .querySelectorAll("[data-menu-image-trigger]")
+            .forEach((el) => {
+              el.classList.remove("is-active");
+            });
+
+          if (target) {
+            target.classList.add("is-active");
+          }
+
+          document.querySelectorAll("[data-menu-image]").forEach((el) => {
+            el.classList.remove("is-active");
+          });
+
+          if (image) {
+            image.classList.add("is-active");
+          }
+        });
+
+        setTimeout(() => {
+          on("html", "click", ".js-menu-shop-open", (e) => {
+            e.preventDefault();
+
+            root.classList.add("menu-shop-is-active");
+            document
+              .querySelector("[data-menu-image]")
+              .classList.add("is-active");
+          });
+
+          on("html", "click", ".js-menu-shop-close", (e) => {
+            root.classList.remove("menu-shop-is-active");
+          });
+        }, 100);
+
+        window.addEventListener("keydown", (e) => {
+          let evt = e || window.event;
+
+          if (evt.keyCode == 27) {
+            root.classList.remove("menu-shop-is-active");
+          }
+        });
+
+        $(".modal-content-shop-list .list-items-accordion-trigger").each(
+          function () {
+            let _this = $(this);
+
+            if (_this.nextUntil(".list-items-accordion-trigger")) {
+              _this
+                .nextUntil(".list-items-accordion-trigger")
+                .wrapAll('<ul class="list-items-accordion" />');
+            } else {
+              _this
+                .nextUntil(".list-item:last-of-type")
+                .wrapAll('<ul class="list-items-accordion" />');
+            }
+
+            let itemAccordion = _this.next(".list-items-accordion");
+
+            itemAccordion.prepend(`<li>
+          <button class="list-items-accordion-close t-l-1">
+              ${_this.text()}</button>
+      </li>`);
+
+            _this.click(function () {
+              itemAccordion.addClass("is-active");
+            });
+
+            itemAccordion
+              .find(".list-items-accordion-close")
+              .click(function () {
+                itemAccordion.removeClass("is-active");
+              });
+          }
+        ); */-->
+      </script>
+    </header>
+
+    <div id="shopify-section-announcement-bar" class="shopify-section">
+      <div id="announcement-bar">
+        <p class="announcement-text t-b-2">Complimentary custom framing and global shipping on all orders, all the time.</p>
+      </div>
+
+      <style>
+        #announcement-bar {
+          background-color: #f7f7f7;
+        }
+
+        #announcement-bar p {
+          color: #666666;
+        }
+
+        #announcement-bar p a {
+          color: #666666;
+        }
+      </style>
+    </div>
+    <div class="background-overlay"></div>
+    <div class="shopify-section">
+      <section class="frontpage-hero-banner">
+        <div class="hero-banner-slides bg-subdued">
+          
+            <div data-slide="1" style="color: #fff;" class="slide is-active">
+              <span class="object-fit">
+                <picture>
+                  <source srcset="
+                      //cdn.shopify.com/s/files/1/0115/7385/4270/files/homepage-hero_80x80.jpg?v=1652267401 80w,
+                      //cdn.shopify.com/s/files/1/0115/7385/4270/files/homepage-hero_240x240.jpg?v=1652267401 240w,
+                      //cdn.shopify.com/s/files/1/0115/7385/4270/files/homepage-hero_480x480.jpg?v=1652267401 480w,
+                      //cdn.shopify.com/s/files/1/0115/7385/4270/files/homepage-hero_800x800.jpg?v=1652267401 800w,
+                      //cdn.shopify.com/s/files/1/0115/7385/4270/files/homepage-hero_1200x1200.jpg?v=1652267401 1200w,
+                      //cdn.shopify.com/s/files/1/0115/7385/4270/files/homepage-hero_1800x1800.jpg?v=1652267401 1800w,
+                      //cdn.shopify.com/s/files/1/0115/7385/4270/files/homepage-hero_2400x2400.jpg?v=1652267401 2400w
+                    " sizes="906px">
+      
+                  <img width="2400" height="1268" data-src="//cdn.shopify.com/s/files/1/0115/7385/4270/files/homepage-hero_1800x.jpg?v=1652267401" data-srcset="
+                      //cdn.shopify.com/s/files/1/0115/7385/4270/files/homepage-hero_80x80.jpg?v=1652267401 80w,
+                      //cdn.shopify.com/s/files/1/0115/7385/4270/files/homepage-hero_240x240.jpg?v=1652267401 240w,
+                      //cdn.shopify.com/s/files/1/0115/7385/4270/files/homepage-hero_480x480.jpg?v=1652267401 480w,
+                      //cdn.shopify.com/s/files/1/0115/7385/4270/files/homepage-hero_800x800.jpg?v=1652267401 800w,
+                      //cdn.shopify.com/s/files/1/0115/7385/4270/files/homepage-hero_1200x1200.jpg?v=1652267401 1200w,
+                      //cdn.shopify.com/s/files/1/0115/7385/4270/files/homepage-hero_1800x1800.jpg?v=1652267401 1800w,
+                      //cdn.shopify.com/s/files/1/0115/7385/4270/files/homepage-hero_2400x2400.jpg?v=1652267401 2400w
+                    " data-sizes="auto" alt="" class="lazyautosizes ls-is-cached lazyloaded" sizes="906px" srcset="
+                      //cdn.shopify.com/s/files/1/0115/7385/4270/files/homepage-hero_80x80.jpg?v=1652267401 80w,
+                      //cdn.shopify.com/s/files/1/0115/7385/4270/files/homepage-hero_240x240.jpg?v=1652267401 240w,
+                      //cdn.shopify.com/s/files/1/0115/7385/4270/files/homepage-hero_480x480.jpg?v=1652267401 480w,
+                      //cdn.shopify.com/s/files/1/0115/7385/4270/files/homepage-hero_800x800.jpg?v=1652267401 800w,
+                      //cdn.shopify.com/s/files/1/0115/7385/4270/files/homepage-hero_1200x1200.jpg?v=1652267401 1200w,
+                      //cdn.shopify.com/s/files/1/0115/7385/4270/files/homepage-hero_1800x1800.jpg?v=1652267401 1800w,
+                      //cdn.shopify.com/s/files/1/0115/7385/4270/files/homepage-hero_2400x2400.jpg?v=1652267401 2400w
+                    " src="//cdn.shopify.com/s/files/1/0115/7385/4270/files/homepage-hero_1800x.jpg?v=1652267401">
+                </picture>
+              </span>
+              <div class="slide-heading c-2 p-center">            
+                <h1 class="t-h-xl">Art for every wall</h1>
+                <h3 class="t-s-2">Framed fine art photography from the world's most adventurous artists</h3>
+                <a href="/collections/all-prints" class="btn btn--underline btn--white">
+                Shop Prints</a>    
+              </div>
+              <div class="slide-content type-spacing">  
+              </div>
+            </div>    
+        </div>
+      </section>
+    </div>  
+    <div class="shopify-section">
+      <section class="featured-products-container">
+        <div class="featured-products-title">
+          Latest and Greatest
+        </div>
+        
+      </section>
+    </div>
+</div>
+  </body>
+</html>

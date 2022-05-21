@@ -1,0 +1,23 @@
+.featured-products-container {
+  width: 100%;
+  margin: var(--s-section) auto;
+  padding: 0;
+}
+
+.featured-products-title {
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+}
+
+@media (min-width: 745px) {
+  .featured-products-title {
+    margin-bottom: 15px;
+    line-height: 36px;
+    letter-spacing: 1.2px;
+    font-size: 34px;
+  }
+}

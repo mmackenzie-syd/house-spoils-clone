@@ -1,0 +1,139 @@
+.frontpage-hero-banner {
+  position: relative;
+  margin: 30px auto;
+  padding: 0 var(--s-contain);
+}
+
+.frontpage-hero-banner .hero-banner-slides {
+  position: relative;
+}
+
+.object-fit,
+.object-contain {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.object-fit > picture,
+.object-fit > iframe {
+  top: -2px;
+  left: -2px;
+  transform: unset;
+  object-fit: unset;
+}
+
+.object-fit > * {
+  width: calc(100% + 8px);
+  height: calc(100% + 4px) !important;
+  object-fit: cover;
+}
+
+.object-fit > *,
+.object-contain > * {
+  position: relative;
+  max-width: none;
+  -webkit-backface-visibility: hidden;
+}
+
+.frontpage-hero-banner .hero-banner-slides:after {
+  content: "";
+  display: block;
+  padding-top: 52%;
+}
+
+.object-fit > picture > img {
+  width: 101%;
+  height: 101% !important;
+  object-fit: cover;
+  -webkit-backface-visibility: hidden;
+}
+
+.frontpage-hero-banner .slide-heading {
+  top: 48%;
+  margin: 0;
+  text-align: center;
+  transition: color 0.4s;
+}
+
+.p-center {
+  position: absolute;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.c-2 {
+  max-width: 1120px;
+}
+
+c,
+.c-1,
+.c-2,
+.c-3,
+.c-4 {
+  width: calc(100vw - var(--s-contain) * 2);
+}
+
+.t-h-xl {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.0225em;
+  font: var(--t-h-xl);
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+}
+
+.t-s-2 {
+  font: var(--t-s-2);
+  -webkit-font-smoothing: antialiased;
+  margin: 20px 0;
+  font-weight: lighter;
+}
+
+.btn.btn--white.btn--underline {
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--cr-white);
+  border: none;
+}
+
+.btn {
+  text-decoration: none;
+  border-radius: 3px;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.btn {
+  text-transform: uppercase;
+  letter-spacing: 0.07143em;
+  font: var(--t-l-2);
+  -webkit-font-smoothing: antialiased;
+  font-weight: 700;
+}
+
+.btn.btn--underline {
+  padding: 0;
+  position: relative;
+}
+
+.btn.btn--underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+}
+
+.btn.btn--white.btn--underline::after {
+  background-color: var(--cr-white);
+}

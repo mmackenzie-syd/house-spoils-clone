@@ -1,0 +1,23 @@
+{
+  "name": "house-spoils-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/http-server -a localhost -p 8000 -c-1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmackenzie-syd/house-spoils-clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmackenzie-syd/house-spoils-clone/issues"
+  },
+  "homepage": "https://github.com/mmackenzie-syd/house-spoils-clone#readme",
+  "dependencies": {
+    "http-server": "^14.1.0"
+  }
+}
